@@ -10,4 +10,16 @@ public class Student {
     private int numberOfCredits = 0;
     private double gpa = 0.0;
 
+    public String getGradeLevel() {
+        if (numberOfCredits > 90) return "Senior";
+        if (numberOfCredits > 60) return "Junior";
+        if (numberOfCredits > 30) return "Sophomore";
+        if (numberOfCredits > 0) return "Freshman";
+        return null;
+    }
+
+    public void addGrade (double grade, int credits) {
+
+    }
+
 }
